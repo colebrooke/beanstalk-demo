@@ -7,8 +7,13 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var concept = require('./routes/concept-log');
 
 var app = express();
+
+// added by JM
+app.get('/concept', concept.index);
+app.post('/add_concept', concept.add_concept);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
