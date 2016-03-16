@@ -7,25 +7,25 @@ block content
     p Install homebrew if you haven't already.
     p Install the Elastic BeanStalk CLI:
     pre.
-      \nbrew install awsebcli      
+      brew install awsebcli      
     p Test that it's working:
     pre.
-      \ncnc0023:beanstalk-demo justin.miller$ eb --version      
+      cnc0023:beanstalk-demo justin.miller$ eb --version      
     pre.
-      \nEB CLI 3.7.3 (Python 2.7.1)      
+      EB CLI 3.7.3 (Python 2.7.1)      
     p  
     p Set up a credentials file in your home directory
     pre.
-      \ncnc0023:beanstalk-demo justin.miller$ cat ~/eb-test-creds      
+      cnc0023:beanstalk-demo justin.miller$ cat ~/eb-test-creds      
     pre.
-      \nAWSAccessKeyId=AKIAJUOIOSDDEXAMPLE      
+      AWSAccessKeyId=AKIAJUOIOSDDEXAMPLE      
     pre.
-      \nAWSSecretKey=FOQCIPO3O/V9QcNoDmxGpj613EXAMPLEn1IJRP      
+      AWSSecretKey=FOQCIPO3O/V9QcNoDmxGpj613EXAMPLEn1IJRP      
     p  
     p
       | Make sure you set security on the file and export the required aws credentials variable.
     pre.
-      \nchmod 600 eb-test-creds      
+      chmod 600 eb-test-creds      
     pre.
-      \nexport AWS_CREDENTIAL_FILE=/Users/justin.miller/eb-test-creds      
+      export AWS_CREDENTIAL_FILE=/Users/justin.miller/eb-test-creds      
 
